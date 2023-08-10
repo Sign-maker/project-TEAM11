@@ -1,0 +1,166 @@
+/* --------------ABOUT US MOBILE-------------- */
+
+.about {
+  padding-top: 64px;
+}
+.about-container {
+  display: flex;
+  padding-left: 0;
+  padding-right: 0;
+}
+.about-title {
+  position: relative;
+  margin-bottom: 30px;
+  padding-left: 50px;
+  color: var(--primary-color-blue-font-0a224a);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.about-title::before {
+  content: '';
+  position: absolute;
+
+  width: 30px;
+  height: 1px;
+  background-color: var(--primary-color-blue-font-0a224a);
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.about-subtitle {
+  margin-bottom: 30px;
+  color: var(--primary-color-blue-font-0a224a);
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 42px;
+  text-transform: uppercase;
+}
+.about-subtext {
+  margin-bottom: 30px;
+  color: var(--primary-color-blue-font-0a224a);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.img-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.about-number {
+  margin-bottom: 14px;
+  color: var(--primary-color-blue-font-0a224a);
+  text-align: center;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.about-text {
+  max-width: 170px;
+  margin: 0 auto;
+  color: var(--primary-color-blue-font-0a224a);
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.about-img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ------------------------------------------------------ */
+
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+  .about-list {
+    margin-bottom: 66px;
+  }
+}
+
+/* ----------------------------------------------------- */
+@media (max-width: 767px) {
+  .about-list {
+    margin-bottom: 64px;
+  }
+  .about-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  .text-wrapper {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+/* ----------------------------------------------------- */
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+  .about {
+    padding-top: 36px;
+  }
+  .about-subtitle {
+    font-size: 32px;
+    line-height: 1.41;
+  }
+  .about-subtext {
+    font-size: 18px;
+  }
+  .about-list {
+    display: flex;
+    gap: 33px;
+  }
+  .text-wrapper {
+    margin: 0 auto;
+    max-width: 576px;
+  }
+  .about-text {
+    font-size: 18px;
+  }
+
+  .about-item {
+    width: calc((100% - 66px) / 2);
+  }
+}
+
+/* ----------------------------------------------------- */
+@media screen and (max-width: 1439px) {
+  .about-container {
+    flex-direction: column;
+  }
+}
+/* ----------------------------------------------------- */
+
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .about-container {
+    align-items: center;
+  }
+  .about-img {
+    max-width: 536px;
+    height: 540px;
+  }
+  .text-wrapper {
+    margin: 0 auto;
+    margin-right: 93px;
+    max-width: 622px;
+  }
+  .about-number {
+    margin-bottom: 19px;
+  }
+  .about-list {
+    gap: 56px;
+  }
+}
