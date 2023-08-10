@@ -39,6 +39,11 @@
   left: 0;
   bottom: 0;
 }
+
+.price-list li:hover {
+  padding-left: 50px;
+}
+
 @media (min-width: 768px) {
   .price {
     padding-top: 100px;
