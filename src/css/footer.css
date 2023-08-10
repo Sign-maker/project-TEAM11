@@ -1,7 +1,7 @@
 /* -----FOOTER-------- */
 
 .footer {
-    background-color: var(--primary-color-0a224a);
+    background-color: var(--primary-color-blue-font-0a224a);
     width: 100%;
 }
 
@@ -20,7 +20,7 @@
 
 .link:hover,
 .link:focus {
-    color: var(--grey-color-b6b6b6);
+    color: var(--gray-color-b6b6b6);
     transition: color var(--my-transition-duration) var(--my-transition-timing-function) var(--my-transition-delay);
 }
 
@@ -47,7 +47,7 @@
 
 .logo-footer-svg:hover,
 .logo-footer-svg:focus {
-    fill: var(--grey-color-b6b6b6);
+    fill: var(--gray-color-b6b6b6);
     transition: fill var(--my-transition-duration) var(--my-transition-timing-function) var(--my-transition-delay);
 }
 
@@ -77,7 +77,7 @@
 
 .social-item-svg:hover,
 .social-item-svg:focus {
-    fill: var(--grey-color-b6b6b6);
+    fill: var(--gray-color-b6b6b6);
     transition: fill var(--my-transition-duration) var(--my-transition-timing-function) var(--my-transition-delay);
 }
 
@@ -126,7 +126,7 @@ address {
 
 .contact-mail:hover,
 .contact-mail:hover {
-    color: var(--grey-color-b6b6b6);
+    color: var(--gray-color-b6b6b6);
     transition: color var(--my-transition-duration) var(--my-transition-timing-function) var(--my-transition-delay);
 }
 
@@ -135,7 +135,7 @@ address {
     text-align: center;
     font-size: 12px;
     font-weight: 400;
-    line-height: 1.17;
+    line-height: 1.25;
     letter-spacing: 0.074em;
     opacity: 0.6;
 }
@@ -146,7 +146,7 @@ address {
 
 .terms-policy-link:hover,
 .terms-policy-link:hover {
-    color: var(--grey-color-b6b6b6);
+    color: var(--gray-color-b6b6b6);
     transition: color var(--my-transition-duration) var(--my-transition-timing-function) var(--my-transition-delay);
 }
 
@@ -192,7 +192,6 @@ address {
     }
 
     .social-item-svg {
-        fill: #FFF;
         width: 40px;
         height: 40px;
     }
