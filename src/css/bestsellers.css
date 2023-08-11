@@ -53,6 +53,9 @@
   .bestsellers-main-wrapper {
     margin-bottom: 30px;
   }
+  .bestsellers-container {
+    flex-direction: column;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -77,6 +80,7 @@
   }
   .bestsellers-furniture-text {
     font-size: 18px;
+    margin-bottom: 7px;
   }
   .bestsellers-price {
     font-size: 18px;
@@ -97,9 +101,13 @@
     margin-right: 24px;
   }
   .bestsellers-list {
-    gap: 30px 20px;
+    max-width: 536px;
+    gap: 27px 20px;
   }
   .bestsellers-item {
     width: calc((100% - 20px) / 2);
+  }
+  .bestsellers-container {
+    max-width: 1216px;
   }
 }
