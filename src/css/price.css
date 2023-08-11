@@ -40,8 +40,23 @@
   bottom: 0;
 }
 
+.price-list li ::before {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background-color: var(--primary-color-blue-font-0a224a);
+  top: 50px;
+  left: -50px;
+  opacity: 0;
+  margin-left: 50px;
+}
 .price-list li:hover {
+  padding-left: 70px;
+}
+.price-list li:hover ::before {
   padding-left: 50px;
+  opacity: 1;
 }
 
 @media (min-width: 768px) {
