@@ -9,8 +9,9 @@
   padding-left: 50px;
   color: var(--primary-color-blue-font-0a224a);
   font-size: 16px;
-  font-weight: 1.5;
   font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
 }
 
 .about-title::before {
@@ -30,7 +31,7 @@
   color: var(--primary-color-blue-font-0a224a);
   font-size: 28px;
   font-style: normal;
-  line-height: 42px;
+  line-height: 1.5;
   text-transform: uppercase;
   font-weight: 400;
 }
@@ -38,6 +39,7 @@
   margin-bottom: 30px;
   color: var(--primary-color-blue-font-0a224a);
   font-style: normal;
+  line-height: 1.5;
 }
 
 .text-wrapper {
@@ -57,6 +59,7 @@
   font-size: 50px;
   font-style: normal;
   text-transform: uppercase;
+  line-height: 1.5;
 }
 .about-text {
   max-width: 170px;
@@ -64,6 +67,7 @@
   color: var(--primary-color-blue-font-0a224a);
   text-align: center;
   font-style: normal;
+  line-height: 1.5;
 }
 
 .about-img {
@@ -87,7 +91,7 @@
     padding-right: 0;
   }
   .text-wrapper {
-    padding: 60px 16px;
+    padding: 64px 16px;
     background-color: var(--light-blue-color-f7faff);
   }
 }
@@ -108,7 +112,6 @@
   }
   .text-wrapper {
     max-width: 704px;
-    height: 499;
     padding: 36px 64px;
     margin-bottom: 30px;
   }
@@ -136,7 +139,7 @@
   }
 
   .about-number {
-    margin-bottom: 19px;
+    margin-bottom: 14px;
   }
   .about-list {
     gap: 56px;
