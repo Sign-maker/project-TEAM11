@@ -11,14 +11,13 @@
 }
 
 .link {
-    display: block;
-    transition: color var(--my-transition-duration) var(--my-transition-timing-function) var(--my-transition-delay);
+    transition: color var(--my-transition-duration) var(--my-transition-timing-function);
 }
 
 .link:hover,
 .link:focus {
     color: var(--gray-color-b6b6b6);
-    transition: color var(--my-transition-duration) var(--my-transition-timing-function) var(--my-transition-delay);
+    transition: color var(--my-transition-duration) var(--my-transition-timing-function);
 }
 
 .logo-nav-social {
@@ -37,6 +36,7 @@
 }
 
 .logo-footer-svg {
+    display: block;
     fill: var(--white-color-fff);
     width: 100px;
     height: 16px;
@@ -45,7 +45,7 @@
 .logo-footer-svg:hover,
 .logo-footer-svg:focus {
     fill: var(--gray-color-b6b6b6);
-    transition: fill var(--my-transition-duration) var(--my-transition-timing-function) var(--my-transition-delay);
+    transition: fill var(--my-transition-duration) var(--my-transition-timing-function);
 }
 
 .nav-list {
@@ -65,6 +65,7 @@
 }
 
 .social-item-svg {
+    display: block;
     fill: var(--white-color-fff);
     width: 28px;
     height: 28px;
@@ -73,7 +74,7 @@
 .social-item-svg:hover,
 .social-item-svg:focus {
     fill: var(--gray-color-b6b6b6);
-    transition: fill var(--my-transition-duration) var(--my-transition-timing-function) var(--my-transition-delay);
+    transition: fill var(--my-transition-duration) var(--my-transition-timing-function);
 }
 
 .contacts {
@@ -84,7 +85,7 @@
     color: var(--white-color-fff);
     font-size: 16px;
     letter-spacing: 0.01em;
-    /* list-style: none; */
+    line-height: 1.2;
 }
 
 .address-timetable-item:not(:last-child) {
@@ -107,6 +108,7 @@ address {
     color: var(--white-color-fff);
     font-size: 16px;
     letter-spacing: 0.01em;
+    /* line-height: 1.2; */
 }
 
 .contact-mail {
@@ -119,26 +121,26 @@ address {
 .contact-mail:hover,
 .contact-mail:hover {
     color: var(--gray-color-b6b6b6);
-    transition: color var(--my-transition-duration) var(--my-transition-timing-function) var(--my-transition-delay);
+    transition: color var(--my-transition-duration) var(--my-transition-timing-function);
 }
 
 .terms-policy {
     color: var(--white-color-fff);
     text-align: center;
     font-size: 12px;
-    line-height: 1.25;
-    letter-spacing: 0.074em;
+    line-height: 1.17;
+    letter-spacing: 0.099em;
     opacity: 0.6;
 }
 
 .terms-policy-link {
-    /* text-decoration-line: underline; */
+    text-decoration-line: underline;
 }
 
 .terms-policy-link:hover,
 .terms-policy-link:hover {
     color: var(--gray-color-b6b6b6);
-    transition: color var(--my-transition-duration) var(--my-transition-timing-function) var(--my-transition-delay);
+    transition: color var(--my-transition-duration) var(--my-transition-timing-function);
 }
 
 
@@ -153,7 +155,6 @@ address {
 @media screen and (min-width: 768px) {
 
     .footer-container {
-        padding-top: 36px;
         padding-bottom: 36px;
     }
 
@@ -189,7 +190,7 @@ address {
 
     .contacts {
         order: -1;
-        margin: -150px 0 0;
+        margin: -148px 0 0;
     }
 
     .contact-mail {
@@ -221,6 +222,8 @@ address {
     .terms-policy,
     .terms-policy a {
         font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.074em;
     }
 }
 
@@ -245,6 +248,10 @@ address {
         margin: 0;
         flex-wrap: wrap;
         flex-direction: row;
+    }
+
+    .address-timetable-list {
+        display: flex;
     }
 
     .contacts .contacts-list {
