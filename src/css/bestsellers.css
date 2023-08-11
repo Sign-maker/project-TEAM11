@@ -43,7 +43,7 @@
 }
 /* ----------------------------------------------- */
 
-@media screen and (min-width: 768px) and (max-width: 1157px) {
+@media screen and (min-width: 768px) and (max-width: 1439px) {
   .bestsellers-main-wrapper {
     margin-bottom: 32px;
   }
