@@ -6,14 +6,11 @@
 }
 
 .footer-container {
-    box-sizing: border-box;
-    max-width: 375px;
-    padding: 36px 16px 16px;
-    margin: 0 auto;
+    padding-top: 36px;
+    padding-bottom: 16px;
 }
 
 .link {
-    text-decoration: none;
     display: block;
     transition: color var(--my-transition-duration) var(--my-transition-timing-function) var(--my-transition-delay);
 }
@@ -59,8 +56,6 @@
 
 .nav-item-link {
     color: var(--white-color-fff);
-    font-size: 16px;
-    font-weight: 400;
     line-height: 1.5;
 }
 
@@ -88,9 +83,8 @@
 .address-timetable-list {
     color: var(--white-color-fff);
     font-size: 16px;
-    font-weight: 400;
     letter-spacing: 0.01em;
-    list-style: none;
+    /* list-style: none; */
 }
 
 .address-timetable-item:not(:last-child) {
@@ -112,7 +106,6 @@ address {
 .contact-link {
     color: var(--white-color-fff);
     font-size: 16px;
-    font-weight: 400;
     letter-spacing: 0.01em;
 }
 
@@ -120,7 +113,6 @@ address {
     display: none;
     color: var(--white-color-fff);
     font-size: 16px;
-    font-weight: 400;
     letter-spacing: 0.01em;
 }
 
@@ -134,14 +126,13 @@ address {
     color: var(--white-color-fff);
     text-align: center;
     font-size: 12px;
-    font-weight: 400;
     line-height: 1.25;
     letter-spacing: 0.074em;
     opacity: 0.6;
 }
 
 .terms-policy-link {
-    text-decoration-line: underline;
+    /* text-decoration-line: underline; */
 }
 
 .terms-policy-link:hover,
@@ -162,8 +153,8 @@ address {
 @media screen and (min-width: 768px) {
 
     .footer-container {
-        padding: 36px 32px 36px;
-        max-width: 768px;
+        padding-top: 36px;
+        padding-bottom: 36px;
     }
 
     .logo-nav {
@@ -235,11 +226,7 @@ address {
 
 
 @media screen and (min-width: 1440px) {
-    .footer-container {
-        padding: 36px 0;
-        max-width: 1320px;
-    }
-
+    
     .logo-nav {
         margin-bottom: 32px;
     }
@@ -261,7 +248,7 @@ address {
     }
 
     .contacts .contacts-list {
-        margin: 0 87px 0 82px;
+        margin: 0 82px 0 87px;
     }
 
     .contact-mail {
