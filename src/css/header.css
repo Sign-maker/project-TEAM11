@@ -6,17 +6,21 @@
   width: 100%;
   z-index: 10;
   background-color: var(--light-blue-color-f7faff);
+  height: 95px;
 }
+
 .header-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 .logo-link {
   padding-top: 36px;
   padding-bottom: 36px;
   z-index: 5;
 }
+
 .logo-icon {
   fill: var(--primary-color-blue-font-0a224a);
 }
@@ -69,7 +73,7 @@
   cursor: pointer;
   display: inline-block;
   position: relative;
-  z-index: 5;
+  z-index: 3;
 }
 
 .stripe,
@@ -90,21 +94,29 @@
 
 /**-----------------  ANIMATION ------------*/
 hamburger--3dy .menu-icon {
-  perspective: 80px; }
+  perspective: 80px;
+}
 
 .hamburger--3dy .stripe {
-  transition: transform 0.15s cubic-bezier(0.645, 0.045, 0.355, 1), background-color 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1); }
-  .hamburger--3dy .hamburger-inner::before, .hamburger--3dy .hamburger-inner::after {
-    transition: transform 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1); }
+  transition: transform 0.15s cubic-bezier(0.645, 0.045, 0.355, 1),
+    background-color 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.hamburger--3dy .hamburger-inner::before,
+.hamburger--3dy .hamburger-inner::after {
+  transition: transform 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
 
-.hamburger--3dy.is-active .stripe-1, .hamburger--3dy.is-active .stripe-3 {
+.hamburger--3dy.is-active .stripe-1,
+.hamburger--3dy.is-active .stripe-3 {
   background-color: transparent !important;
-  transform: rotateX(-180deg); }
-  .hamburger--3dy.is-active .stripe-2 {
-    transform: translate3d(0, 10px, 0) rotate(45deg); }
-  .hamburger--3dy.is-active .stripe-4 {
-    transform: translate3d(0, -11px, 0) rotate(-45deg); }
-
+  transform: rotateX(-180deg);
+}
+.hamburger--3dy.is-active .stripe-2 {
+  transform: translate3d(0, 10px, 0) rotate(45deg);
+}
+.hamburger--3dy.is-active .stripe-4 {
+  transform: translate3d(0, -11px, 0) rotate(-45deg);
+}
 
 @media screen and (max-width: 1440px) {
   .container {
@@ -124,6 +136,21 @@ hamburger--3dy .menu-icon {
 
   .menu-body.active {
     left: 0;
+  }
+
+  .menu-body.active::before {
+    left: 0;
+  }
+
+  .menu-body::before {
+    content: '';
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: -100%;
+    height: 95px;
+    background-color: var(--light-blue-color-f7faff);
+    z-index: 2;
   }
 
   .menu-list {
