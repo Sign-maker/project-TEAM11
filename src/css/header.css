@@ -1,8 +1,7 @@
 /**------------------------ HEADER ----------------*/
+
+
 .header {
-  position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
   z-index: 10;
   background-color: var(--light-blue-color-f7faff);
@@ -34,7 +33,7 @@
 .menu-link {
   display: block;
   color: var(--primary-color-blue-font-0a224a);
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
 }
@@ -42,6 +41,12 @@
 /**----------------- MEDIA ------------------*/
 
 @media screen and (min-width: 768px) {
+
+ 
+
+  .menu-link {
+    font-size: 18px;
+  }
 
   .logo-link {
     padding-top: 39px;
@@ -65,6 +70,7 @@
     background-color: var(--white-color-fff);
     display: flex;
     transition: all 250ms ease-in-out;
+    z-index: 2;
   }
 
   .menu-body.active {
