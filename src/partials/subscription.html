@@ -7,30 +7,31 @@
       </p>
       <form action="#">
         <div class="subscribe-label">
-          <label for="user-name" class="input-label">
-            <input
-              type="text"
-              class="subscribe-input"
-              name="user-name"
-              id="user-name"
-              placeholder="Name"
-              required
-              minlength="2"
-              maxlength="16"
-            />
-          </label>
-          <label for="user-email" class="input-label error-container">
+          <label for="user-name" class="input-label"></label>
+          <input
+            type="text"
+            class="subscribe-input"
+            name="user-name"
+            id="user-name"
+            placeholder="Name"
+            required
+            minlength="2"
+            maxlength="16"
+          />
+          <label for="user-email" class="input-label"></label>
+          <div class="error-container">
             <input
               type="email"
               class="subscribe-input"
               name="user-email"
               id="user-email"
               placeholder="E-mail"
+              required
             />
             <svg class="error-icon" width="24" height="24">
               <use href="../img/svg/icons.svg#error"></use>
             </svg>
-          </label>
+          </div>
         </div>
         <div class="checkbox-container">
           <input
@@ -39,6 +40,7 @@
             id="agree-to-subscribe"
             class="subscribe-check visually-hidden"
             value="true"
+            required
           />
           <label for="agree-to-subscribe" class="check-text">
             <span class="checkbox-check">
@@ -106,7 +108,7 @@
       <img
         class="subscribe-img"
         src="./img/subscription/table-sofa-mobile@1x.jpg"
-        alt="image"
+        alt="table-sofa"
       />
     </picture>
   </div>
