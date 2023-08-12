@@ -27,16 +27,18 @@
   .our-products-list {
     gap: 16px;
   }
-  .img-our-products {
-    width: 343px;
-    height: 300px;
+  .our-pruducts-item {
+    flex-basis: ((100% - 16px)/2);
   }
+
   .title-our-products {
     font-size: 32px;
     line-height: 1.4;
+    margin-bottom: 30px;
   }
   .paragraph-our-products {
     font-size: 18px;
+    margin-top: 15px;
   }
 }
 
@@ -44,14 +46,12 @@
   .our-products-list {
     gap: 24px;
   }
-  .img-our-products {
-    width: 312px;
-    height: 300px;
+  .our-pruducts-item {
+    flex-basis: ((100% - 72px)/4);
   }
 }
 @media (max-width: 1439px) {
-  .our-products-list li:nth-child(3),
-  .our-products-list li:nth-child(4) {
+  .our-products-list li:nth-child(n + 3) {
     display: none;
   }
 }
