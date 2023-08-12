@@ -15,7 +15,7 @@ const menuBtn = document.querySelector('.menu-icon')
 const body = document.body;
 
 if (menu && menuBtn) {
-    menuBtn.addEventListener('click', function() {
+    menuBtn.addEventListener('click', function(e) {
         menu.classList.toggle('active')
         menuBtn.classList.toggle('active')
         body.classList.toggle('lock')
