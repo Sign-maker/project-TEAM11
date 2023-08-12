@@ -42,7 +42,7 @@
 /**------------ HUMBURGER ------------*/
 
 .hamburger {
-  display: inline-block;
+  display: block;
   border: none;
   background: none;
   padding: 0;
@@ -88,8 +88,8 @@
   margin-bottom: 6.67px;
   display: block;
   transition-property: transform;
-  transition-duration: 0.15s;
-  transition-timing-function: ease;
+  transition-duration: 250ms;
+  transition-timing-function: ease-in-out;
 }
 
 /**-----------------  ANIMATION ------------*/
@@ -101,8 +101,8 @@ hamburger--3dy .menu-icon {
   transition: transform 0.15s cubic-bezier(0.645, 0.045, 0.355, 1),
     background-color 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
-.hamburger--3dy .hamburger-inner::before,
-.hamburger--3dy .hamburger-inner::after {
+.hamburger--3dy .stripe-2,
+.hamburger--3dy .stripe-4 {
   transition: transform 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
@@ -118,6 +118,8 @@ hamburger--3dy .menu-icon {
   transform: translate3d(0, -11px, 0) rotate(-45deg);
 }
 
+/**----------------- MEDIA ------------------*/
+
 @media screen and (max-width: 1440px) {
   .container {
     max-width: 768px;
@@ -131,7 +133,7 @@ hamburger--3dy .menu-icon {
     width: 100%;
     background-color: var(--white-color-fff);
     display: flex;
-    transition: all 0.2s;
+    transition: all 250ms ease-in-out;
   }
 
   .menu-body.active {
@@ -142,6 +144,10 @@ hamburger--3dy .menu-icon {
     left: 0;
   }
 
+  .lock {
+    overflow: hidden;
+  }
+
   .menu-body::before {
     content: '';
     position: fixed;
@@ -150,7 +156,6 @@ hamburger--3dy .menu-icon {
     left: -100%;
     height: 95px;
     background-color: var(--light-blue-color-f7faff);
-    z-index: 2;
   }
 
   .menu-list {
@@ -173,5 +178,9 @@ hamburger--3dy .menu-icon {
 
   .menu-icon {
     display: none;
+  }
+
+  .menu-link:is(:hover, :focus) {
+color: var(--accent-color-061835);
   }
 }
