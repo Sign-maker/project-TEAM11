@@ -1,13 +1,14 @@
 /* =======clients reviews======== */
-.clients {
-}
 
+.clients{
+  background: var(--light-blue-color-f7faff);
+}
 .clients-box {
   padding-top: 36px;
   padding-bottom: 36px;
   align-items: center;
   justify-content: center;
-  background: var(--light-blue-color-f7faff);
+  
 }
 
 .clients-title {
@@ -86,6 +87,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    
   }
   .clients-title {
     color: var(--primary-color-blue-font-0a224a);
@@ -136,6 +138,8 @@
   .clients-box {
     padding-top: 60px;
     padding-bottom: 60px;
+    
+
   }
 
   .clients-card {
