@@ -1,14 +1,21 @@
 /* =======clients reviews======== */
-.clients {
+
+
+@media (max-width: 767px) {
+  .clients-card li:not(:first-child) {
+    display: none;
+
+  }
 }
 
-.clients-box {
-  padding-top: 36px;
-  padding-bottom: 36px;
-  align-items: center;
-  justify-content: center;
+.clients {
   background: var(--light-blue-color-f7faff);
+  padding-top: 36px;
+    padding-bottom: 36px;
 }
+
+
+.container {}
 
 .clients-title {
   color: var(--primary-color-blue-font-0a224a);
@@ -16,49 +23,49 @@
   font-weight: 400;
   line-height: 1.5;
   text-transform: uppercase;
-  margin-bottom: 30px;
   text-align: center;
-}
-
-.clients-card {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  height: 230px;
+  margin-bottom: 30px;
 }
 
 .clients-item {
-  border-radius: 8px;
-  background: var(--white, #fff);
-  padding: 24px;
-
-  height: 100%;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  width: 100%;
+  display: inline-block;
 }
-.tablet,
-.desctop {
-  display: none;
+
+
+
+
+.clients-item {
+  border-radius: 8px;
+  background: var(--white-color-fff);
+  padding: 24px;
+  display: block;
+}
+
+
+
+.clients-item-box {
+  display: flex;
 }
 
 .clients-image {
   border-radius: 48px;
-  position: absolute;
-  top: 24px;
-  left: 24px;
   width: 48px;
+  height: 48px;
+}
+
+
+
+.clients-name-description {
+  margin-left: 14px;
+  margin-bottom: 24px;
 }
 
 .clients-name {
   color: var(--primary-color-blue-font-0a224a);
   font-size: 18px;
   font-weight: 700;
-  line-height: 1.7;
+  line-height: 1.77;
   text-transform: uppercase;
-  margin-left: 62px;
   margin-bottom: 2px;
 }
 
@@ -67,8 +74,7 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 1.28;
-  margin-left: 62px;
-  margin-bottom: 24px;
+  
   opacity: 0.8;
 }
 
@@ -79,99 +85,125 @@
   line-height: 1.42;
 }
 
-@media (min-width: 768px) {
-  .clients-box {
+
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .clients { 
     padding-top: 36px;
     padding-bottom: 36px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .clients-title {
-    color: var(--primary-color-blue-font-0a224a);
-    font-size: 32px;
-    font-weight: 400;
-    line-height: 1.4;
   }
 
   .clients-card {
     display: flex;
-    flex-direction: row;
     gap: 16px;
-    justify-content: center;
-    height: 319px;
-  }
-  .mobil,
-  .tablet {
-    display: flex;
-    flex-direction: column;
   }
 
   .clients-item {
-    height: 100%;
+   display: inline-block;
+  flex-basis: calc((100% - 16px) / 2);
+   
   }
-  .clients-image {
-    width: 56px;
+
+  .clients-card li:last-child {
+    display: none;
+
   }
+
+  .clients-title {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1.4;
+    text-transform: uppercase;
+  }
+  .clients-name-description{
+  margin-bottom:14px ;}
+
   .clients-name {
     font-size: 20px;
     font-weight: 700;
-    line-height: 2.25;
-    margin-left: 70px;
+    line-height: 1.77;
+    text-transform: uppercase;
+    margin-bottom: 4px;
   }
+
   .clients-ago {
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
-    margin-left: 70px;
+    /* margin-bottom: 14px; */
+    opacity: 0.8;
   }
+
   .clients-description {
     font-size: 18px;
     font-weight: 400;
     line-height: 1.5;
   }
+
+  .clients-image {
+    width: 56px;
+    height: 56px;
+    border-radius: 56px;
+  }
 }
 
+
 @media (min-width: 1440px) {
-  .clients-box {
+  .clients{
     padding-top: 60px;
     padding-bottom: 60px;
   }
 
+  .clients-title {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1.4;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+
   .clients-card {
-    gap: 24px;
-    height: 306px;
-  }
-  .clients-image {
-    top: 32px;
-    left: 32px;
-  }
-  .clients-item {
-    padding: 32px;
     display: flex;
-    flex-direction: column;
-    width: calc((100% - 48px) / 3);
+    gap: 24px;
   }
+
+  .clients-image {
+    width: 56px;
+    height: 56px;
+    border-radius: 56px;
+  }
+
+  .clients-item {
+    flex-basis: calc((100% - 48px) / 3);
+    display: inline-block;
+    padding: 32px;
+  }
+  .clients-name-description{
+    margin-bottom: 
+      16px;
+    }
+  
+
   .clients-name {
     font-size: 20px;
     font-weight: 700;
-    line-height: 2.25;
+    line-height: 1.77;
     text-transform: uppercase;
-    margin-left: 70px;
-    margin-bottom: 2px;
-    padding: 0;
+    margin-bottom: 4px;
   }
 
   .clients-ago {
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
-    margin-left: 70px;
-    margin-bottom: 16px;
+    
   }
+
   .clients-description {
     font-size: 18px;
     font-weight: 400;
     line-height: 1.5;
   }
+
 }
+
