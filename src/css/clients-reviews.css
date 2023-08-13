@@ -10,12 +10,10 @@
 
 .clients {
   background: var(--light-blue-color-f7faff);
+  padding-top: 36px;
+    padding-bottom: 36px;
 }
 
-.clients-box {
-  padding-top: 36px;
-  padding-bottom: 36px;
-}
 
 .container {}
 
@@ -59,6 +57,7 @@
 
 .clients-name-description {
   margin-left: 14px;
+  margin-bottom: 24px;
 }
 
 .clients-name {
@@ -75,7 +74,7 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 1.28;
-  margin-bottom: 24px;
+  
   opacity: 0.8;
 }
 
@@ -89,7 +88,7 @@
 
 
 @media (min-width: 768px) and (max-width: 1439px) {
-  .clients-box {
+  .clients { 
     padding-top: 36px;
     padding-bottom: 36px;
   }
@@ -100,7 +99,9 @@
   }
 
   .clients-item {
-    display: inline-block;
+   display: inline-block;
+  flex-basis: calc((100% - 16px) / 2);
+   
   }
 
   .clients-card li:last-child {
@@ -114,6 +115,8 @@
     line-height: 1.4;
     text-transform: uppercase;
   }
+  .clients-name-description{
+  margin-bottom:14px ;}
 
   .clients-name {
     font-size: 20px;
@@ -127,7 +130,7 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
-    margin-bottom: 14px;
+    /* margin-bottom: 14px; */
     opacity: 0.8;
   }
 
@@ -146,7 +149,7 @@
 
 
 @media (min-width: 1440px) {
-  .clients-box {
+  .clients{
     padding-top: 60px;
     padding-bottom: 60px;
   }
@@ -171,22 +174,29 @@
   }
 
   .clients-item {
+    flex-basis: calc((100% - 48px) / 3);
     display: inline-block;
     padding: 32px;
   }
+  .clients-name-description{
+    margin-bottom: 
+      16px;
+    }
+  
 
   .clients-name {
     font-size: 20px;
     font-weight: 700;
     line-height: 1.77;
     text-transform: uppercase;
+    margin-bottom: 4px;
   }
 
   .clients-ago {
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
-    margin-bottom: 16px;
+    
   }
 
   .clients-description {
@@ -196,3 +206,4 @@
   }
 
 }
+
