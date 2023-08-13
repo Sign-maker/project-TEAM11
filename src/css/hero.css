@@ -30,13 +30,19 @@
   background-color: var(--primary-color-blue-font-0a224a);
 }
 
-.hero {
-  padding-top: 140px;
-  padding-bottom: 313px;
-  background-image: url(../img/hero/product-bg-mobile@1x.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 375px;
+.hero-link:is(:hover, :focus) {
+  background-color: var(--accent-color-061835);
+}
+
+@media (max-width: 767px) {
+  .hero {
+    padding-top: 140px;
+    padding-bottom: 313px;
+    background-image: url(../img/hero/product-bg-mobile@1x.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 375px;
+  }
 }
 
 @media (min-device-pixel-ratio: 2),
@@ -51,7 +57,6 @@
 
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: none;
     padding-top: 61px;
     padding-bottom: 100px;
   }
@@ -63,7 +68,6 @@
     background-size: 308px, 367px;
     background-repeat: no-repeat;
     background-position: left bottom, right bottom;
-    margin-bottom: 32px;
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -91,13 +95,18 @@
     padding: 13px 72px;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .bg-img {
+    margin-bottom: 32px;
+  }
+}
 
 /**----------------------- DESKTOP -----------------------*/
 
 @media screen and (min-width: 1440px) {
-.hero {
-  padding-top: 64px;
-}
+  .hero {
+    padding-top: 64px;
+  }
 
   .bg-img {
     min-width: 983px;
@@ -105,8 +114,6 @@
       url(../img/hero/product-bg-desktop-center@1x.jpg);
     background-repeat: no-repeat;
     background-size: 310px, 648px;
-    background-position: left bottom, 335px bottom;
-    margin-bottom: 0;
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -125,7 +132,6 @@
     background-image: url(../img/hero/product-bg-desktop-right@1x.jpg);
     background-repeat: no-repeat;
   }
-
 
   .hero-container {
     display: flex;
