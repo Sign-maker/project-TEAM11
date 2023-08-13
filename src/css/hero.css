@@ -102,13 +102,13 @@
 
 @media screen and (min-width: 1440px) {
   .bg-img {
-    min-height: 530px;
     min-width: 983px;
     background-image: url(../img/hero/product-bg-desktop-left@1x.jpg),
       url(../img/hero/product-bg-desktop-center@1x.jpg);
     background-repeat: no-repeat;
     background-size: 310px, 648px;
-    background-position: left bottom, 335px center;
+    background-position: left bottom, 335px bottom;
+    margin-bottom: 0;
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -121,6 +121,9 @@
   }
 
   .content-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     background-image: url(../img/hero/product-bg-desktop-right@1x.jpg);
     background-repeat: no-repeat;
   }
