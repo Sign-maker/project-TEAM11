@@ -1,269 +1,269 @@
 /* -----FOOTER-------- */
 
 .footer {
-    background-color: var(--primary-color-blue-font-0a224a);
-    width: 100%;
-    padding-top: 36px;
-    padding-bottom: 16px;
+  background-color: var(--primary-color-blue-font-0a224a);
+  padding-top: 36px;
+  padding-bottom: 16px;
 }
 
 .link {
-    transition: color var(--my-transition-duration) var(--my-transition-timing-function);
+  transition: color var(--my-transition-duration)
+    var(--my-transition-timing-function);
 }
 
 .link:hover,
 .link:focus {
-    color: var(--gray-color-b6b6b6);
-    transition: color var(--my-transition-duration) var(--my-transition-timing-function);
+  color: var(--gray-color-b6b6b6);
+  transition: color var(--my-transition-duration)
+    var(--my-transition-timing-function);
 }
 
 .logo-nav-social {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .logo-nav {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .logo-footer {
-    margin: 6px 0 42px;
+  margin: 6px 0 42px;
 }
 
 .logo-footer-svg {
-    display: block;
-    fill: var(--white-color-fff);
-    width: 100px;
-    height: 16px;
+  display: block;
+  fill: var(--white-color-fff);
+  width: 100px;
+  height: 16px;
 }
 
 .logo-footer-svg:hover,
 .logo-footer-svg:focus {
-    fill: var(--gray-color-b6b6b6);
-    transition: fill var(--my-transition-duration) var(--my-transition-timing-function);
+  fill: var(--gray-color-b6b6b6);
+  transition: fill var(--my-transition-duration)
+    var(--my-transition-timing-function);
 }
 
 .nav-list {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .nav-item-link {
-    color: var(--white-color-fff);
-    line-height: 1.5;
+  color: var(--white-color-fff);
+  line-height: 1.5;
 }
 
 .social-list {
-    display: flex;
-    gap: 16px;
+  display: flex;
+  gap: 16px;
 }
 
 .social-item-svg {
-    display: block;
-    fill: var(--white-color-fff);
-    width: 28px;
-    height: 28px;
+  display: block;
+  fill: var(--white-color-fff);
+  width: 28px;
+  height: 28px;
 }
 
 .social-item-svg:hover,
 .social-item-svg:focus {
-    fill: var(--gray-color-b6b6b6);
-    transition: fill var(--my-transition-duration) var(--my-transition-timing-function);
+  fill: var(--gray-color-b6b6b6);
+  transition: fill var(--my-transition-duration)
+    var(--my-transition-timing-function);
 }
 
 .contacts {
-    margin: 36px 0 64px;
+  margin: 36px 0 64px;
 }
 
 .address-timetable-list {
-    color: var(--white-color-fff);
-    font-size: 16px;
-    letter-spacing: 0.01em;
-    line-height: 1.2;
+  color: var(--white-color-fff);
+  font-size: 16px;
+  letter-spacing: 0.01em;
+  line-height: 1.2;
 }
 
 .address-timetable-item:not(:last-child) {
-    margin-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 address {
-    font-style: normal;
+  font-style: normal;
 }
 
 .contacts .contacts-list {
-    margin-top: 35px;
+  margin-top: 35px;
 }
 
 .contact-item:not(:last-child) {
-    margin-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .contact-link {
-    color: var(--white-color-fff);
-    font-size: 16px;
-    letter-spacing: 0.01em;
-    /* line-height: 1.2; */
+  color: var(--white-color-fff);
+  font-size: 16px;
+  letter-spacing: 0.01em;
+  /* line-height: 1.2; */
 }
 
 .contact-mail {
-    display: none;
-    color: var(--white-color-fff);
-    font-size: 16px;
-    letter-spacing: 0.01em;
+  display: none;
+  color: var(--white-color-fff);
+  font-size: 16px;
+  letter-spacing: 0.01em;
 }
 
 .contact-mail:hover,
 .contact-mail:hover {
-    color: var(--gray-color-b6b6b6);
-    transition: color var(--my-transition-duration) var(--my-transition-timing-function);
+  color: var(--gray-color-b6b6b6);
+  transition: color var(--my-transition-duration)
+    var(--my-transition-timing-function);
 }
 
 .terms-policy {
-    color: var(--white-color-fff);
-    text-align: center;
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.099em;
-    opacity: 0.6;
+  color: var(--white-color-fff);
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.099em;
+  opacity: 0.6;
 }
 
 .terms-policy-link {
-    text-decoration-line: underline;
+  text-decoration-line: underline;
 }
 
 .terms-policy-link:hover,
 .terms-policy-link:hover {
-    color: var(--gray-color-b6b6b6);
-    transition: color var(--my-transition-duration) var(--my-transition-timing-function);
+  color: var(--gray-color-b6b6b6);
+  transition: color var(--my-transition-duration)
+    var(--my-transition-timing-function);
 }
-
-
 
 /* ----------MEDIA------------ */
-@media screen and (min-width: 320px) {}
-
-
-@media screen and (min-width: 375px) {}
-
-
-@media screen and (min-width: 768px) {
-
-    .footer {
-        padding-bottom: 36px;
-    }
-
-    .logo-nav {
-        flex-direction: row;
-        flex: 1;
-    }
-
-    .logo-footer {
-        margin: 12px 0 0;
-    }
-
-    .logo-footer-svg {
-        width: 127px;
-    }
-
-    .nav {
-        margin: 8px 0 0 249px;
-    }
-
-    .nav-list {
-        gap: 16px;
-    }
-
-    .nav-item-link {
-        font-size: 18px;
-    }
-
-    .social-item-svg {
-        width: 40px;
-        height: 40px;
-    }
-
-    .contacts {
-        order: -1;
-        margin: -148px 0 0;
-    }
-
-    .contact-mail {
-        display: flex;
-        margin: 24px 0 64px;
-        font-size: 19px;
-    }
-
-    .contacts .contacts-list {
-        margin-top: 64px;
-    }
-
-    .contact-item:not(:last-child) {
-        margin-bottom: 24px;
-    }
-
-    .contact-link {
-        font-size: 19px;
-    }
-
-    .address-timetable-list {
-        font-size: 19px;
-    }
-
-    .address-timetable-item:not(:last-child) {
-        margin-bottom: 24px;
-    }
-
-    .terms-policy,
-    .terms-policy a {
-        font-size: 16px;
-        line-height: 1.25;
-        letter-spacing: 0.074em;
-    }
+@media screen and (min-width: 320px) {
 }
 
+@media screen and (min-width: 375px) {
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    padding-bottom: 36px;
+  }
+
+  .logo-nav {
+    flex-direction: row;
+    flex: 1;
+  }
+
+  .logo-footer {
+    margin: 12px 0 0;
+  }
+
+  .logo-footer-svg {
+    width: 127px;
+  }
+
+  .nav {
+    margin: 8px 0 0 249px;
+  }
+
+  .nav-list {
+    gap: 16px;
+  }
+
+  .nav-item-link {
+    font-size: 18px;
+  }
+
+  .social-item-svg {
+    width: 40px;
+    height: 40px;
+  }
+
+  .contacts {
+    order: -1;
+    margin: -148px 0 0;
+  }
+
+  .contact-mail {
+    display: flex;
+    margin: 24px 0 64px;
+    font-size: 19px;
+  }
+
+  .contacts .contacts-list {
+    margin-top: 64px;
+  }
+
+  .contact-item:not(:last-child) {
+    margin-bottom: 24px;
+  }
+
+  .contact-link {
+    font-size: 19px;
+  }
+
+  .address-timetable-list {
+    font-size: 19px;
+  }
+
+  .address-timetable-item:not(:last-child) {
+    margin-bottom: 24px;
+  }
+
+  .terms-policy,
+  .terms-policy a {
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.074em;
+  }
+}
 
 @media screen and (min-width: 1440px) {
-    
-    .logo-nav {
-        margin-bottom: 32px;
-    }
+  .logo-nav {
+    margin-bottom: 32px;
+  }
 
-    .nav {
-        margin-left: 217px;
-    }
+  .nav {
+    margin-left: 217px;
+  }
 
-    .nav-list {
-        flex-direction: row;
-        gap: 30px;
-    }
+  .nav-list {
+    flex-direction: row;
+    gap: 30px;
+  }
 
-    .contacts {
-        display: flex;
-        margin: 0;
-        flex-wrap: wrap;
-        flex-direction: row;
-    }
+  .contacts {
+    display: flex;
+    margin: 0;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
 
-    .address-timetable-list {
-        display: flex;
-    }
+  .address-timetable-list {
+    display: flex;
+  }
 
-    .contacts .contacts-list {
-        margin: 0 82px 0 87px;
-    }
+  .contacts .contacts-list {
+    margin: 0 82px 0 87px;
+  }
 
-    .contact-mail {
-        margin: 0;
-    }
+  .contact-mail {
+    margin: 0;
+  }
 
-    .terms-policy {
-        margin-top: 35px;
-    }
+  .terms-policy {
+    margin-top: 35px;
+  }
 
-    .social-list {
-        gap: 30px;
-    }
+  .social-list {
+    gap: 30px;
+  }
 }
