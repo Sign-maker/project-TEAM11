@@ -13,8 +13,6 @@
 
 .hero-text {
   color: var(--primary-color-blue-font-0a224a);
-  font-size: 16px;
-  font-weight: 400;
   line-height: 1.5;
   max-width: 343px;
   margin-bottom: 28px;
@@ -23,8 +21,6 @@
 .hero-link {
   display: inline-block;
   color: var(--white-color-fff);
-  font-size: 16px;
-  font-weight: 400;
   line-height: 1.5;
   padding: 12px 76px;
   background-color: var(--primary-color-blue-font-0a224a);
