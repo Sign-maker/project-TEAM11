@@ -3,9 +3,6 @@
 .footer {
     background-color: var(--primary-color-blue-font-0a224a);
     width: 100%;
-}
-
-.footer-container {
     padding-top: 36px;
     padding-bottom: 16px;
 }
@@ -154,7 +151,7 @@ address {
 
 @media screen and (min-width: 768px) {
 
-    .footer-container {
+    .footer {
         padding-bottom: 36px;
     }
 
