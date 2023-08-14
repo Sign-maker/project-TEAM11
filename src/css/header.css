@@ -37,12 +37,14 @@
   text-align: center;
 }
 
+.menu-link:is(:hover, :focus) {
+  animation-name: heartBeat;
+  animation-duration: 1000ms;
+}
+
 /**----------------- MEDIA ------------------*/
 
 @media screen and (min-width: 768px) {
-
- 
-
   .menu-link {
     font-size: 18px;
   }
