@@ -17,8 +17,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-    <script type="module" crossorigin src="/project-TEAM11/assets/index-b99e8868.js"></script>
-    <link rel="stylesheet" href="/project-TEAM11/assets/index-6706988d.css">
+    <script type="module" crossorigin src="/project-TEAM11/assets/index-0ec1c9bc.js"></script>
+    <link rel="stylesheet" href="/project-TEAM11/assets/index-3501dbea.css">
   </head>
   <body>
     <header class="header">
@@ -631,7 +631,104 @@
   </div>
 </section>
 
-      
+      <section id="subscribe" class="subscribe-section">
+  <div class="subscribe-container container">
+    <div class="inputs-container">
+      <h2 class="subscribe-section-title">Newsletter</h2>
+      <p class="subscribe-description">
+        Every week we will send you new designs and information about sales.
+      </p>
+      <form class="subscribe-form" name="subscribe-form" autocomplete="off">
+        <div class="subscribe-input-wrapper">
+          <label for="user-name" class="input-label"></label>
+          <input
+            type="text"
+            class="subscribe-input"
+            name="user-name"
+            id="user-name"
+            placeholder="Name"
+            required
+            minlength="2"
+            maxlength="16"
+          />
+          <label for="user-email" class="input-label"></label>
+          <div class="error-container">
+            <input
+              type="email"
+              class="subscribe-input"
+              name="user-email"
+              id="user-email"
+              placeholder="E-mail"
+              required
+            />
+            <svg class="error-icon" width="24" height="24">
+              <use href="/project-TEAM11/assets/icons-8b9c1d2d.svg#error"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="checkbox-container">
+          <input
+            type="checkbox"
+            name="agree-to-subscribe"
+            id="agree-to-subscribe"
+            class="subscribe-check visually-hidden"
+            value="true"
+            required
+          />
+          <label for="agree-to-subscribe" class="check-text">
+            <span class="checkbox-check">
+              <svg class="checkbox-icon" width="13" height="13">
+                <use href="/project-TEAM11/assets/icons-8b9c1d2d.svg#check"></use>
+              </svg> </span
+            >Agree to subscribe to the newsletter
+          </label>
+        </div>
+        <button type="submit" class="subscribe-button">Send</button>
+      </form>
+    </div>
+    <picture>
+      <source
+        srcset="/project-TEAM11/assets/table-sofa-mobile@1x-632a4804.jpg 1x, /project-TEAM11/assets/table-sofa-mobile@2x-d46c0cd8.jpg 2x"
+        media="(max-width:767px)"
+        type="image/jpeg"
+      />
+      <source
+        srcset="/project-TEAM11/assets/table-sofa-mobile@1x-f8510030.webp 1x, /project-TEAM11/assets/table-sofa-mobile@2x-84978825.webp 2x"
+        media="(max-width:767px)"
+        type="image/webp"
+      />
+
+      <source
+        srcset="/project-TEAM11/assets/table-sofa-tablet@1x-10d90149.jpg 1x, /project-TEAM11/assets/table-sofa-tablet@2x-be62d12e.jpg 2x"
+        media="(max-width:1439px)"
+        type="image/jpeg"
+      />
+      <source
+        srcset="/project-TEAM11/assets/table-sofa-tablet@1x-4fb6dc91.webp 1x, /project-TEAM11/assets/table-sofa-tablet@2x-e84d41d2.webp 2x"
+        media="(max-width:1439px)"
+        type="image/webp"
+      />
+
+      <source
+        srcset="/project-TEAM11/assets/table-sofa-desktop@1x-b567eab8.jpg 1x, /project-TEAM11/assets/table-sofa-desktop@2x-f00d391e.jpg 2x"
+        media="(min-width:1440px)"
+        type="image/jpeg"
+      />
+      <source
+        srcset="/project-TEAM11/assets/table-sofa-desktop@1x-ff854f57.webp 1x, /project-TEAM11/assets/table-sofa-desktop@2x-9ec52c4f.webp 2x"
+        media="(min-width:1440px)"
+        type="image/webp"
+      />
+
+      <img
+        class="subscribe-img"
+        src="/project-TEAM11/assets/table-sofa-mobile@1x-632a4804.jpg"
+        alt="table-sofa"
+      />
+    </picture>
+  </div>
+</section>
+
     </main>
     <footer class="footer" id="contacts">
   <div class="footer-container container">
