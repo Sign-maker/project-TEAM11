@@ -65,8 +65,7 @@ body {
   max-width: 375px;
   padding-left: 16px;
   padding-right: 16px;
-  outline: 1px solid red;
-  /* background-color: #d29191; */
+  /* outline: 1px solid red; */
 }
 @media (min-width: 768px) {
   .container {
