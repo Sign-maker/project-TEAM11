@@ -1,12 +1,12 @@
-<section class="subscribe-section">
+<section id="subscribe" class="subscribe-section">
   <div class="subscribe-container container">
     <div class="inputs-container">
       <h2 class="subscribe-section-title">Newsletter</h2>
       <p class="subscribe-description">
         Every week we will send you new designs and information about sales.
       </p>
-      <form action="#">
-        <div class="subscribe-label">
+      <form class="subscribe-form" name="subscribe-form" autocomplete="off">
+        <div class="subscribe-input-wrapper">
           <label for="user-name" class="input-label"></label>
           <input
             type="text"
@@ -29,7 +29,7 @@
               required
             />
             <svg class="error-icon" width="24" height="24">
-              <use href="../img/svg/icons.svg#error"></use>
+              <use href="./img/svg/icons.svg#error"></use>
             </svg>
           </div>
         </div>
@@ -45,12 +45,12 @@
           <label for="agree-to-subscribe" class="check-text">
             <span class="checkbox-check">
               <svg class="checkbox-icon" width="13" height="13">
-                <use href="../img/svg/icons.svg#check"></use>
+                <use href="./img/svg/icons.svg#check"></use>
               </svg> </span
             >Agree to subscribe to the newsletter
           </label>
         </div>
-        <button type="submit" class="subsribe-button">Send</button>
+        <button type="submit" class="subscribe-button">Send</button>
       </form>
     </div>
     <picture>
