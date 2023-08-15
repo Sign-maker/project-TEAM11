@@ -1,0 +1,115 @@
+<section id="subscribe" class="subscribe-section">
+  <div class="subscribe-container container">
+    <div class="inputs-container">
+      <h2 class="subscribe-section-title">Newsletter</h2>
+      <p class="subscribe-description">
+        Every week we will send you new designs and information about sales.
+      </p>
+      <form class="subscribe-form" name="subscribe-form" autocomplete="off">
+        <div class="subscribe-input-wrapper">
+          <label for="user-name" class="input-label"></label>
+          <input
+            type="text"
+            class="subscribe-input"
+            name="user-name"
+            id="user-name"
+            placeholder="Name"
+            required
+            minlength="2"
+            maxlength="16"
+          />
+          <label for="user-email" class="input-label"></label>
+          <div class="error-container">
+            <input
+              type="email"
+              class="subscribe-input"
+              name="user-email"
+              id="user-email"
+              placeholder="E-mail"
+              required
+            />
+            <svg class="error-icon" width="24" height="24">
+              <use href="./img/svg/icons.svg#error"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="checkbox-container">
+          <input
+            type="checkbox"
+            name="agree-to-subscribe"
+            id="agree-to-subscribe"
+            class="subscribe-check visually-hidden"
+            value="true"
+            required
+          />
+          <label for="agree-to-subscribe" class="check-text">
+            <span class="checkbox-check">
+              <svg class="checkbox-icon" width="13" height="13">
+                <use href="./img/svg/icons.svg#check"></use>
+              </svg> </span
+            >Agree to subscribe to the newsletter
+          </label>
+        </div>
+        <button type="submit" class="subscribe-button">Send</button>
+      </form>
+    </div>
+    <picture>
+      <source
+        srcset="
+          ./img/subscription/table-sofa-mobile@1x.jpg 1x,
+          ./img/subscription/table-sofa-mobile@2x.jpg 2x
+        "
+        media="(max-width:767px)"
+        type="image/jpeg"
+      />
+      <source
+        srcset="
+          ./img/subscription/table-sofa-mobile@1x.webp 1x,
+          ./img/subscription/table-sofa-mobile@2x.webp 2x
+        "
+        media="(max-width:767px)"
+        type="image/webp"
+      />
+
+      <source
+        srcset="
+          ./img/subscription/table-sofa-tablet@1x.jpg 1x,
+          ./img/subscription/table-sofa-tablet@2x.jpg 2x
+        "
+        media="(max-width:1439px)"
+        type="image/jpeg"
+      />
+      <source
+        srcset="
+          ./img/subscription/table-sofa-tablet@1x.webp 1x,
+          ./img/subscription/table-sofa-tablet@2x.webp 2x
+        "
+        media="(max-width:1439px)"
+        type="image/webp"
+      />
+
+      <source
+        srcset="
+          ./img/subscription/table-sofa-desktop@1x.jpg 1x,
+          ./img/subscription/table-sofa-desktop@2x.jpg 2x
+        "
+        media="(min-width:1440px)"
+        type="image/jpeg"
+      />
+      <source
+        srcset="
+          ./img/subscription/table-sofa-desktop@1x.webp 1x,
+          ./img/subscription/table-sofa-desktop@2x.webp 2x
+        "
+        media="(min-width:1440px)"
+        type="image/webp"
+      />
+
+      <img
+        class="subscribe-img"
+        src="./img/subscription/table-sofa-mobile@1x.jpg"
+        alt="table-sofa"
+      />
+    </picture>
+  </div>
+</section>
