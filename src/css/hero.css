@@ -24,6 +24,8 @@
   line-height: 1.5;
   padding: 12px 76px;
   background-color: var(--primary-color-blue-font-0a224a);
+  transition: background-color var(--my-transition-duration)
+    var(--my-transition-timing-function);
 }
 
 .hero-link:is(:hover, :focus) {

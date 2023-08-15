@@ -23,6 +23,23 @@
   fill: var(--primary-color-blue-font-0a224a);
 }
 
+.menu-link {
+  display: block;
+  color: var(--primary-color-blue-font-0a224a);
+  line-height: 1.5;
+  text-align: center;
+  transition: color var(--my-transition-duration)
+    var(--my-transition-timing-function);
+}
+
+.menu-link:is(:hover, :focus) {
+  color: var(--accent-color-061835);
+  animation-name: heartBeat;
+  animation-duration: 700ms;
+}
+
+/**----------------- MENU -------------------*/
+
 .menu-icon {
   width: 32px;
   height: 32px;
@@ -56,24 +73,10 @@
   opacity: 0;
 }
 
-/**---------------------- MENU ----------------------*/
-
-.menu-link {
-  display: block;
-  color: var(--primary-color-blue-font-0a224a);
-  line-height: 1.5;
-  text-align: center;
-  transition: color var(--my-transition-duration)
-    var(--my-transition-timing-function);
-}
-
-.menu-link:is(:hover, :focus) {
-  color: var(--accent-color-061835);
-  animation-name: heartBeat;
-  animation-duration: 700ms;
-}
 
 /**----------------- MEDIA ------------------*/
+
+/**------------------ MEDIA-TABLET -------------------*/
 
 @media screen and (min-width: 768px) {
   .bar {
@@ -107,6 +110,9 @@
     height: 17px;
   }
 }
+
+/**------------------- MEDIA-TABLET and MOBILE -------------------------*/
+
 @media screen and (max-width: 1439px) {
   .menu-body {
     position: absolute;
@@ -153,6 +159,8 @@
     margin-bottom: 30px;
   }
 }
+
+/**----------------------- MEDIA-DESKTOP -----------------*/
 
 @media screen and (min-width: 1440px) {
   .menu-list {
