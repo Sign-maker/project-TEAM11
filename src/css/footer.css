@@ -7,15 +7,13 @@
 }
 
 .link {
-  transition: color var(--my-transition-duration)
+  transition: opacity var(--my-transition-duration)
     var(--my-transition-timing-function);
 }
 
 .link:hover,
 .link:focus {
-  color: var(--gray-color-b6b6b6);
-  transition: color var(--my-transition-duration)
-    var(--my-transition-timing-function);
+  opacity: 0.7;
 }
 
 .logo-nav-social {
@@ -28,9 +26,8 @@
   display: flex;
   flex-direction: column;
 }
-
 .logo-footer {
-  margin: 6px 0 42px;
+  padding-top: 6px;
 }
 
 .logo-footer-svg {
@@ -38,13 +35,6 @@
   fill: var(--white-color-fff);
   width: 100px;
   height: 16px;
-}
-
-.logo-footer-svg:hover,
-.logo-footer-svg:focus {
-  fill: var(--gray-color-b6b6b6);
-  transition: fill var(--my-transition-duration)
-    var(--my-transition-timing-function);
 }
 
 .nav-list {
@@ -68,13 +58,6 @@
   fill: var(--white-color-fff);
   width: 28px;
   height: 28px;
-}
-
-.social-item-svg:hover,
-.social-item-svg:focus {
-  fill: var(--gray-color-b6b6b6);
-  transition: fill var(--my-transition-duration)
-    var(--my-transition-timing-function);
 }
 
 .contacts {
@@ -118,13 +101,6 @@ address {
   letter-spacing: 0.01em;
 }
 
-.contact-mail:hover,
-.contact-mail:hover {
-  color: var(--gray-color-b6b6b6);
-  transition: color var(--my-transition-duration)
-    var(--my-transition-timing-function);
-}
-
 .terms-policy {
   color: var(--white-color-fff);
   text-align: center;
@@ -136,13 +112,13 @@ address {
 
 .terms-policy-link {
   text-decoration-line: underline;
+  transition: opacity var(--my-transition-duration)
+    var(--my-transition-timing-function);
 }
 
 .terms-policy-link:hover,
-.terms-policy-link:hover {
-  color: var(--gray-color-b6b6b6);
-  transition: color var(--my-transition-duration)
-    var(--my-transition-timing-function);
+.terms-policy-link:focus {
+  opacity: 0.7;
 }
 
 /* ----------MEDIA------------ */
@@ -150,6 +126,11 @@ address {
 }
 
 @media screen and (min-width: 375px) {
+}
+@media screen and (max-width: 768px) {
+  .logo-footer {
+    margin-bottom: 42px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -160,10 +141,7 @@ address {
   .logo-nav {
     flex-direction: row;
     flex: 1;
-  }
-
-  .logo-footer {
-    margin: 12px 0 0;
+    align-items: baseline;
   }
 
   .logo-footer-svg {
